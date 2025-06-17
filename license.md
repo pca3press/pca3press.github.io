@@ -1,7 +1,8 @@
 ---
 layout: default
-title: ""
+title: License
 permalink: /license/
+hide_title: true
 ---
 
 # The AI Forge Source Code License (v1.0, June 2025)
