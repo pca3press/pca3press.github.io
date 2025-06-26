@@ -7,7 +7,7 @@ permalink: /license/
 
 Copyright (c) 2025 Jianxian Wu
 
-Permission is hereby granted to verified individual owners of *The AI Forge* book, in either digital or print format, to use, copy, modify, and run the source code accompanying the book, subject to the following conditions:
+Permission is hereby granted to verified individual owners of [The AI Forge](https://pca3press.com/) book, in either digital or print format, to use, copy, modify, and run the source code accompanying the book, subject to the following conditions:
 
 ### 1. Ownership Restriction  
    This license is granted exclusively to those who can demonstrate legitimate ownership of *The AI Forge* (e.g., proof of purchase, unique token, or verified access credentials issued by the author or pca3press.com). Unauthorized users may not use, copy, or modify this code.
