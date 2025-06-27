@@ -1,3 +1,9 @@
+---
+layout: default
+title: Volume II Preface
+permalink: /vol2_preface/
+---
+
 # Volume II Preface – The Master’s Workshop
 
 You have walked the Apprentice’s Path — explored the history of artificial intelligence, built your first agents, trained your first learning systems, and glimpsed the immense landscape ahead. Now, it is time to step deeper into the forge.
