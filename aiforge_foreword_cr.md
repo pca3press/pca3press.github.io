@@ -1,4 +1,10 @@
-# Foreword by Chris Rowen {.unnumbered}
+---
+layout: default
+title: Foreword
+permalink: /foreword/
+---
+
+# Foreword by Chris Rowen
 
 If you’ve been living under a rock for the past five years, you might have missed the explosion of interest in artificial intelligence (AI). Otherwise, you’ve probably felt the buzz in the media, seen the flood of new products, and noticed the astonishing pace of technical progress in AI. But the complexity of these methods, the breadth of their applications, and the breathless hype may leave you yearning for thoughtful yet accessible explanations. The AI Forge is here to provide exactly that kind of grounding and to help you explore many of the most important questions:
 
