@@ -1,3 +1,9 @@
+---
+layout: default
+title: Preface
+permalink: /preface/
+---
+
 # Preface: The Forge and the Flame 
 
 In every medieval village, the blacksmith’s workshop stands at the heart of the community. Apprentices start young, sweeping floors and watching silently. Over time, they earn trust to stoke the fire, shape small pieces of metal, and learn the rhythm of the hammer. As their understanding deepens, they earn their place at the anvil, crafting blades of remarkable strength and elegance.
