@@ -1,3 +1,9 @@
+---
+layout: default
+title: Volume II Foreword
+permalink: /vol2_foreword/
+---
+
 # Volume II Foreword – The New Discipline of AI Engineering 
 “When code writes itself, the last craft remaining is making it efficient.”
 
