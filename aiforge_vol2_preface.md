@@ -1,4 +1,5 @@
-# Volume II Preface – The Master’s Workshop {.unnumbered}
+# Volume II Preface – The Master’s Workshop
+
 You have walked the Apprentice’s Path — explored the history of artificial intelligence, built your first agents, trained your first learning systems, and glimpsed the immense landscape ahead. Now, it is time to step deeper into the forge.
 
 In Volume II, we turn from ideas to execution. From clarity of understanding to clarity of structure. Here, we will rebuild the foundations we laid in Python — not by copying them line by line, but by reshaping them with new tools: bitboards, vectorized computation, multithreading, and performance-aware design. We will enter the architecture of machines, not merely to use them, but to understand and guide them.
