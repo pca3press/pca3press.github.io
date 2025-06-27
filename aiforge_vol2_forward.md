@@ -1,4 +1,4 @@
-# Volume II Foreword – The New Discipline of AI Engineering {.unnumbered}
+# Volume II Foreword – The New Discipline of AI Engineering 
 “When code writes itself, the last craft remaining is making it efficient.”
 
 In the era of GPT and generative AI, code is no longer scarce. It flows freely, endlessly—even beautifully—from machines that have never touched silicon. But there is a cost. Much of this code, while functional, is inefficient, bloated, and blind to the machine it runs on. It works — but it wastes. And as AI models scale and inference spreads, that waste compounds, rippling outward until the consequences stretch beyond datacenters into the world itself. Some projections now suggest that AI could consume up to 3% of the world's energy within the coming decade.
