@@ -1,3 +1,9 @@
+---
+layout: default
+title: Introduction
+permalink: /introduction/
+---
+
 # Introduction: Tracing the Path Ahead
 
 Artificial intelligence has risen from a quiet branch of computer science into a force that touches nearly every part of our lives. Yet even as AI becomes a defining technology of the modern world, confusion and uncertainty often surround it. What is AI, truly? How does it work beneath the surface? What role will it play in our future, and what role will we play alongside it?
