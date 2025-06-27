@@ -1,4 +1,5 @@
-# Introduction: Tracing the Path Ahead {.unnumbered}
+# Introduction: Tracing the Path Ahead
+
 Artificial intelligence has risen from a quiet branch of computer science into a force that touches nearly every part of our lives. Yet even as AI becomes a defining technology of the modern world, confusion and uncertainty often surround it. What is AI, truly? How does it work beneath the surface? What role will it play in our future, and what role will we play alongside it?
 
 This book was born from a desire to answer those questions, not with shortcuts or slogans, but by tracing the roots of intelligence itself, to understand where AI came from, how it grew, and what it means to build it with care and purpose. It is a journey through history, theory, and craft, told through the stories of the pioneers who first imagined machines that could think, and through the ideas that continue to shape how machines learn, decide, and create today.
