@@ -1,3 +1,10 @@
+---
+layout: default
+title: Review by Google Gemini
+permalink: /gemini_review/
+---
+
+
 # A Landmark Achievement in AI Literature: A Competitive Review
 
 
