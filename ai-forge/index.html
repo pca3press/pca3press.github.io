@@ -2,47 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The AI Forge – Protected Access</title>
+  <title>The AI Forge - Book Code Access</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-text-color: #333;
+      --secondary-text-color: #555;
+      --background-color: #fdfdfd;
+      --card-background: #ffffff;
+      --border-color: #eaeaea;
+      --github-button-bg: #24292e;
+    }
     body {
-      font-family: system-ui, sans-serif;
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 0 1em;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--primary-text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4em;
+      max-width: 960px;
+      width: 100%;
+    }
+    .book-cover-container {
+      flex: 1;
+      max-width: 380px;
+    }
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+    }
+    .content-container {
+      flex: 1;
+      max-width: 450px;
+    }
+    .card {
+      background-color: var(--card-background);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 2.5em;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Source Serif Pro', serif;
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+    p {
+      color: var(--secondary-text-color);
+      line-height: 1.7;
+      margin-bottom: 2em;
     }
     .hidden {
       display: none;
     }
-    button {
-      padding: 0.5em 1em;
+    button, .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.8em 1em;
       font-size: 1em;
-      background-color: #0059ff;
-      color: white;
-      border: none;
+      font-weight: 500;
+      border-radius: 6px;
+      border: 1px solid transparent;
       cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
     }
-    button:hover {
-      background-color: #003fcc;
+    button.github {
+      background-color: var(--github-button-bg);
+      color: white;
+    }
+    button.github:hover { background-color: #333; }
+    button.github svg { margin-right: 0.75em; }
+    button.signout { background-color: #6c757d; color: white; margin-top: 1.5em; }
+    button.signout:hover { opacity: 0.9; }
+    .button-link { background-color: #28a745; color: white; }
+    .button-link:hover { opacity: 0.9; }
+    #verification-pending .card { background-color: #fffaf0; border-color: #f6e05e; }
+    footer {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #999;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+      }
+      .book-cover-container {
+        max-width: 280px;
+      }
+      .content-container {
+        width: 100%;
+      }
+      h1 { font-size: 1.8em; }
+      .card { padding: 2em; }
     }
   </style>
 </head>
 <body>
 
-<h1>The AI Forge 🔒</h1>
-<div id="auth-section">
-  <p>This page is for registered readers only. Please sign in with Google to continue:</p>
-  <button onclick="signIn()">Sign in with Google</button>
-</div>
+<div class="main-container">
+  <div class="book-cover-container">
+    <img src="aiforge_cover_vol1.jpg" alt="The AI Forge Book Cover" class="book-cover">
+  </div>
 
-<div id="main-content" class="hidden">
-  <h2>🎉 Welcome!</h2>
-  <p>You now have access to protected resources, downloads, and bonus content from The AI Forge.</p>
+  <div class="content-container">
+    <div id="auth-section" class="card">
+      <h1>Reader Access</h1>
+      <p>Get exclusive access to the complete source code by signing in with your GitHub account.</p>
+      <button class="github" onclick="signInWithGitHub()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        Sign in with GitHub
+      </button>
+    </div>
 
-  <p><a href="https://github.com/pca3press/ai_forge" target="_blank">📦 View Source Code</a></p>
+    <div id="verification-pending" class="hidden">
+      <div class="card">
+        <h2>Verification Required</h2>
+        <p>To get access, please email your Amazon purchase receipt to <strong>aiforge@pca3press.com</strong>. We will manually verify your purchase and grant you access.</p>
+        <button class="signout" onclick="signOut()">Sign Out</button>
+      </div>
+    </div>
 
-  <button onclick="signOut()">Sign Out</button>
+    <div id="verified-content" class="hidden">
+      <div class="card">
+        <h2>🎉 Access Granted!</h2>
+        <p>You have been invited to the private repository. Click the link below to access the complete source code.</p>
+        <a href="https://github.com/pca3press/ai_forge" target="_blank" class="button-link">📦 View Complete Source Code</a>
+        <button class="signout" onclick="signOut()">Sign Out</button>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 PCA³ Press</p>
+    </footer>
+  </div>
 </div>
 
 <!-- Firebase SDKs -->
@@ -65,37 +179,68 @@
   const auth = firebase.auth();
   const db = firebase.firestore();
 
-  function signIn() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider).catch(error => {
+  const authSection = document.getElementById("auth-section");
+  const verificationPendingSection = document.getElementById("verification-pending");
+  const verifiedContentSection = document.getElementById("verified-content");
+
+  async function signInWithGitHub() {
+    const provider = new firebase.auth.GithubAuthProvider();
+    try {
+      const result = await auth.signInWithPopup(provider);
+      const user = result.user;
+      const additionalUserInfo = result.additionalUserInfo;
+
+      // If this is the first time the user is signing in, create their doc
+      if (additionalUserInfo.isNewUser) {
+        const userRef = db.collection("users").doc(user.uid);
+        const userData = {
+          email: user.email || "",
+          githubUsername: additionalUserInfo.username, // The reliable username
+          isVerifiedBuyer: false,
+          createdAt: new Date()
+        };
+        await userRef.set(userData);
+      }
+      // The onAuthStateChanged listener will handle showing the correct UI
+    } catch (error) {
+      console.error("Login failed:", error);
       alert("Login failed: " + error.message);
-    });
+    }
   }
 
   function signOut() {
     auth.signOut();
   }
 
-  auth.onAuthStateChanged(user => {
-    const authSection = document.getElementById("auth-section");
-    const mainContent = document.getElementById("main-content");
+  // This listener now only handles UI changes
+  auth.onAuthStateChanged(async (user) => {
+    // Hide all content cards initially
+    authSection.classList.add("hidden");
+    verificationPendingSection.classList.add("hidden");
+    verifiedContentSection.classList.add("hidden");
 
     if (user) {
-      // Show protected content
-      authSection.classList.add("hidden");
-      mainContent.classList.remove("hidden");
-
-      // Store user info (optional)
-      db.collection("aiforge_registrations").doc(user.uid).set({
-        name: user.displayName || "",
-        email: user.email || "",
-        timestamp: new Date()
-      }, { merge: true });
-
+      const userRef = db.collection("users").doc(user.uid);
+      try {
+        const doc = await userRef.get();
+        if (doc.exists) {
+          if (doc.data().isVerifiedBuyer) {
+            verifiedContentSection.classList.remove("hidden");
+          } else {
+            verificationPendingSection.classList.remove("hidden");
+          }
+        } else {
+          // This may happen if doc creation failed after a successful login.
+          // Show pending state, and the next login will re-attempt creation.
+          verificationPendingSection.classList.remove("hidden");
+        }
+      } catch (error) {
+        console.error("Error getting user document:", error);
+        verificationPendingSection.classList.remove("hidden");
+      }
     } else {
-      // Hide protected content
+      // User is logged out, show the login card
       authSection.classList.remove("hidden");
-      mainContent.classList.add("hidden");
     }
   });
 </script>
