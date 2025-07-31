@@ -190,9 +190,13 @@
       const user = result.user;
       const additionalUserInfo = result.additionalUserInfo;
 
-      // If this is the first time the user is signing in, create their doc
-      if (additionalUserInfo.isNewUser) {
-        const userRef = db.collection("users").doc(user.uid);
+      // More robust user document creation:
+      // Check if the user document already exists before creating it.
+      // This prevents issues if the initial write failed but the user is no longer "new".
+      const userRef = db.collection("users").doc(user.uid);
+      const doc = await userRef.get();
+
+      if (!doc.exists) {
         const userData = {
           email: user.email || "",
           githubUsername: additionalUserInfo.username, // The reliable username
